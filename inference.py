@@ -47,7 +47,7 @@ def run_chunked_detection(audio_path, model_path, chunk_sec, threshold):
 
     print("Detected snore segments (seconds):")
     # for start, end in merged:
-    #     print(f"  - From {start:.2f} sec to {end:.2f} sec")
+
     for idx, (start, end) in enumerate(merged, 1):
         duration = end - start
         print(f"{idx:2d}. Start: {start:.2f} sec, Duration: {duration:.2f} sec")
